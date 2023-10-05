@@ -1,6 +1,7 @@
-import "./globals.css";
+import PlausibleProvider from "next-plausible";
 import { Footer } from "~/components/sections/Footer";
 import { Header } from "~/components/sections/Header";
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -9,7 +10,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
+      <head>
+        <PlausibleProvider domain="haulinhatchets.com" />
+      </head>
       <body>
         <Header />
         {children}
