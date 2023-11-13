@@ -1,26 +1,46 @@
-import Image from "next/image";
-
-import { Section } from "~/components/Section";
+import Link from "next/link";
 
 export const Header = () => {
+  const nav = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Locations",
+      href: "/#locations",
+    },
+    {
+      name: "Contact",
+      href: "/#contact",
+    },
+    {
+      name: "Waiver",
+      href: "/waiver",
+    },
+  ];
+
   return (
-    <Section className="header bg-zinc-900 mb-16 bg-[url('/textures/2.jpg')] bg-blend-overlay">
-      <div className="flex justify-center flex-wrap items-center py-8 sm:py-16">
-        <Image
+    <div className="flex flex-col items-center justify-center w-full px-4 py-4 lg:px-24 lg:flex-row lg:flex-wrap lg:justify-between header-background">
+      <Link href="/" className="flex items-center gap-2 pb-6 sm:pb-0">
+        <img
           src="/haulin-hatchets.png"
           alt="Haulin' Hatchets Logo"
-          width="300"
-          height="262"
+          className="w-24 h-auto -rotate-12"
         />
-        <div className="hidden sm:block">
-          <h1 className="text-7xl text-white font-bold">
-            Haulin 🪓
-            <br />
-            Hatchets{" "}
-            <span className="text-2xl text-white font-bold pb-4">L.L.C.</span>
-          </h1>
-        </div>
-      </div>
-    </Section>
+        <h1 className="text-4xl font-bold tracking-wide font-display">
+          Haulin Hatchets
+        </h1>
+      </Link>
+      <nav>
+        <ul className="flex font-semibold text-center uppercase text-md sm:text-lg gap-x-6 sm:gap-x-12 font-cal">
+          {nav.map(({ name, href }) => (
+            <li>
+              <Link href={href}>{name}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 };

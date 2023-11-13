@@ -100,7 +100,7 @@ export const WaiverForm = () => {
             </label>
             <input
               {...register("firstName", { required: true })}
-              className="p-1 mt-2 text-black border-2 rounded-sm bg-slate-100"
+              className="p-1 mt-2 text-black border-2 rounded-sm bg-stone-100"
               type="text"
               id="firstName"
             />
@@ -114,7 +114,7 @@ export const WaiverForm = () => {
             </label>
             <input
               {...register("lastName", { required: true })}
-              className="p-1 mt-2 text-black border-2 rounded-sm bg-slate-100"
+              className="p-1 mt-2 text-black border-2 rounded-sm bg-stone-100"
               type="text"
               id="lastName"
             />
@@ -134,7 +134,7 @@ export const WaiverForm = () => {
               locale="en-US"
               required
               borderRadius="square"
-              className="mt-2 text-black rounded-sm bg-slate-100"
+              className="mt-2 text-black rounded-sm bg-stone-100"
             />
             {errors.birthday && (
               <span>
@@ -150,7 +150,7 @@ export const WaiverForm = () => {
             </label>
             <input
               {...register("phone", { required: true })}
-              className="p-1 mt-2 text-black border-2 rounded-sm bg-slate-100"
+              className="p-1 mt-2 text-black border-2 rounded-sm bg-stone-100"
               type="phone"
               id="phone"
             />
@@ -166,7 +166,7 @@ export const WaiverForm = () => {
         <div className="w-full mt-4">
           <input
             {...register("waiverAgreed", { required: true })}
-            className="p-1 mt-2 mr-2 text-black border-2 rounded-sm bg-slate-100"
+            className="p-1 mt-2 mr-2 text-black border-2 rounded-sm bg-stone-100"
             type="checkbox"
             id="waiverAgreed"
           />
@@ -184,7 +184,7 @@ export const WaiverForm = () => {
         <div className="w-full mt-4">
           <input
             {...register("signatureAgreed", { required: true })}
-            className="p-1 mt-2 mr-2 text-black border-2 rounded-sm bg-slate-100"
+            className="p-1 mt-2 mr-2 text-black border-2 rounded-sm bg-stone-100"
             type="checkbox"
             id="signatureAgreed"
           />
@@ -211,7 +211,7 @@ export const WaiverForm = () => {
 
         <button
           type="submit"
-          className="w-full py-2 mt-8 mb-16 text-black rounded-lg bg-zinc-200 hover:bg-zinc-300"
+          className="w-full py-2 mt-8 text-black rounded-lg bg-zinc-200 hover:bg-zinc-300"
           disabled={buttonText !== "Submit" ? true : false}
         >
           {buttonText}{" "}

@@ -3,16 +3,20 @@ import { Calendar } from "~/components/sections/Calendar";
 import { Contact } from "~/components/sections/Contact";
 import type { Metadata } from "next";
 
+const title = "Haulin Hatchets - Mobile Axe Throwing";
+const description =
+  "Haulin Hatchets LLC is a mobile axe throwing company based out of Wilson, North Carolina";
+
 export const metadata: Metadata = {
-  title: "Mobile Axe Throwing | Haulin Hatchets LLC",
-  description: "Haulin Hatchets LLC is a mobile axe throwing company",
+  title,
+  description,
 
   keywords: ["axe throwing", "mobile axe throwing"],
   authors: [{ name: "Alex Zepezauer", url: "zep.sh" }],
 
   openGraph: {
-    title: "Mobile Axe Throwing | Haulin Hatchets LLC",
-    description: "Haulin Hatchets LLC is a mobile axe throwing company",
+    title,
+    description,
     url: "https://haulinhatchets.com",
     siteName: "Haulin Hatchets LLC",
     images: [
@@ -29,9 +33,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Mobile Axe Throwing | Haulin Hatchets LLC",
-    description: "Haulin Hatchets LLC is a mobile axe throwing company",
-    // TODO: Add twitter handle
+    title,
+    description,
     // TODO: Add twitter image
     images: ["https://nextjs.org/og.png"],
   },
