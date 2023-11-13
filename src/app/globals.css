@@ -24,7 +24,7 @@ body {
 
 @media (min-width: 1056px) {
   .header-background {
-    background-image: url('/textures/better_wood_header_5.png');
+    background-image: url('/textures/wood_top.png');
     background-repeat: repeat-x;
     background-size: contain;
     background-position: center;
@@ -37,4 +37,23 @@ body {
   .header-background h1, .header-background a {
     text-shadow: 0px 0px 16px black;
   }
+
+  .footer-background {
+    background-image: url('/textures/wood_bottom.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    padding:40px 0px;
+    z-index: 20;
+  }
+}
+
+.section-separator {
+  background-image: url('/textures/wood_middle.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  z-index: 20;
 }

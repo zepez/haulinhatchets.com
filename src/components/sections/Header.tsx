@@ -3,10 +3,6 @@ import Link from "next/link";
 export const Header = () => {
   const nav = [
     {
-      name: "Home",
-      href: "/",
-    },
-    {
       name: "Locations",
       href: "/#locations",
     },

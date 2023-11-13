@@ -66,6 +66,7 @@ export default function Home() {
     <main>
       <Grid />
       <Calendar />
+      <div className="section-separator h-[100px] my-8 md:h-[250px] md:my-0" />
       <Contact />
     </main>
   );
