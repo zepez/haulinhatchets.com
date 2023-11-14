@@ -18,7 +18,7 @@ export const Header = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full px-4 py-4 lg:px-24 lg:flex-row lg:flex-wrap lg:justify-between header-background">
-      <Link href="/" className="flex items-center gap-2 pb-6 sm:pb-0">
+      <Link href="/" className="flex items-center gap-2 pb-4 lg:pb-0">
         <img
           src="/haulin-hatchets.png"
           alt="Haulin' Hatchets Logo"
@@ -29,7 +29,7 @@ export const Header = () => {
         </h1>
       </Link>
       <nav>
-        <ul className="flex font-semibold text-center uppercase text-md sm:text-lg gap-x-6 sm:gap-x-12 font-cal">
+        <ul className="flex flex-wrap font-semibold text-center uppercase text-md lg:text-lg gap-x-8 lg:gap-x-12 font-cal">
           {nav.map(({ name, href }) => (
             <li>
               <Link href={href}>{name}</Link>

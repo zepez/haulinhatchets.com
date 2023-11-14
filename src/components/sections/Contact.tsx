@@ -46,7 +46,7 @@ export const Contact = () => {
   };
 
   return (
-    <Section className="mx-8 contact md:mx-auto">
+    <Section className="mx-8 contact lg:mx-auto">
       <div id="contact">
         <div className="flex justify-between gap-8 pb-12">
           <div>

@@ -3,7 +3,7 @@ import { Section } from "~/components/Section";
 export const Calendar = () => {
   return (
     <>
-      <Section className="max-w-4xl mx-8 mt-16 calendar md:mx-auto">
+      <Section className="max-w-4xl mx-8 mt-16 calendar lg:mx-auto">
         <div className="flex justify-between gap-6">
           <div className="pb-8">
             <h2 id="locations" className="mb-4 text-5xl font-semibold font-cal">

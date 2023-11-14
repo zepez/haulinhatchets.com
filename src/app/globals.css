@@ -22,7 +22,7 @@ body {
   @apply text-stone-200 bg-[#20130D];
 }
 
-@media (min-width: 1056px) {
+@media (min-width: 1024px) {
   .header-background {
     background-image: url('/textures/wood_top.png');
     background-repeat: repeat-x;

@@ -14,7 +14,7 @@ export const Grid = () => {
           height={780}
         />
       </div>
-      <div className="flex gap-2 py-2 overflow-x-scroll bg-white">
+      <div className="flex gap-2 p-2 overflow-x-scroll bg-white">
         {images.map((image) => (
           <Image
             key={image}
