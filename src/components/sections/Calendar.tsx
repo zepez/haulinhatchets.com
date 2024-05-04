@@ -6,7 +6,10 @@ export const Calendar = () => {
       <Section className="max-w-4xl mx-8 mt-16 calendar lg:mx-auto">
         <div className="flex justify-between gap-6">
           <div className="pb-8">
-            <h2 id="locations" className="mb-4 text-5xl font-semibold font-cal">
+            <h2
+              id="locations"
+              className="mb-4 text-4xl font-semibold md:text-5xl font-cal"
+            >
               We bring the fun to you
             </h2>
             <p className="mb-4 text-lg">

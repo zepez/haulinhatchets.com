@@ -63,10 +63,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="mx-auto">
       <Grid />
       <Calendar />
-      <div className="section-separator h-[100px] my-8 md:h-[250px] md:my-0" />
+      <div className="section-separator h-[200px] my-8" />
       <Contact />
     </main>
   );

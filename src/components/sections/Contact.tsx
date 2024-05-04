@@ -50,7 +50,9 @@ export const Contact = () => {
       <div id="contact">
         <div className="flex justify-between gap-8 pb-12">
           <div>
-            <h1 className="text-5xl font-semibold font-cal">Get in touch</h1>
+            <h1 className="text-4xl font-semibold md:text-5xl font-cal">
+              Get in touch
+            </h1>
             <p className="py-4 text-lg">
               Haulin Hatchets LLC is available in the surrounding area. Please{" "}
               <a href="tel:2524128840" className="underline cursor-pointer">
@@ -63,7 +65,7 @@ export const Contact = () => {
               >
                 email
               </a>{" "}
-              or fill out the form below to verify your location.
+              or fill out the form below to confirm your location.
             </p>
           </div>
           <p className="text-right text-[6rem] leading-none">📨</p>
