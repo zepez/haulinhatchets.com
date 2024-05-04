@@ -12,7 +12,8 @@ const config = {
   prefix: "",
   theme: {
     fontFamily: {
-      sans: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
+      cal: ["cal-sans", ...defaultTheme.fontFamily.sans],
+      display: ["brogte", ...defaultTheme.fontFamily.serif],
     },
     container: {
       center: true,

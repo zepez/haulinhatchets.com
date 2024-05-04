@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import PlausibleProvider from "next-plausible";
+import "@/app/globals.css";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 import { cn } from "@/lib/utils";
-import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -79,7 +81,9 @@ export default function Layout({
     <html lang="en">
       <body className={cn(inter.className, "font-sans")}>
         <PlausibleProvider domain="haulinhatchets.com">
+          <Header />
           {children}
+          <Footer />
         </PlausibleProvider>
       </body>
     </html>

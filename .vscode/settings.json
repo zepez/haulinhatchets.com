@@ -1,5 +1,11 @@
 {
-  "cSpell.ignoreWords": ["haulin", "haulin'", "haulinhatchets"],
+  "cSpell.ignoreWords": [
+    "haulin",
+    "haulin'",
+    "haulinhatchets",
+    "airtable",
+    "brogte"
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
