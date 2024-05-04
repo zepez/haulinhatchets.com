@@ -38,20 +38,20 @@ export const genContactMessage = (data: validate.Contact) => {
 };
 
 export const genWaiverMessage = (data: validate.Waiver) => {
-  const { firstName, lastName, birthday, phone, email, waiverSigned } = data;
+  const { fullName, birthday, phone, email } = data;
 
   return {
     from: config.WAIVER_EMAIL,
     to: config.WAIVER_EMAIL,
-    subject: `${firstName} ${lastName} | Waiver submission`,
-    text: `${firstName} ${lastName} has agreed to the waiver.`,
+    subject: `${fullName} | Waiver submission`,
+    text: `${fullName} has signed the waiver.`,
     html: `
-      <h1>${firstName} ${lastName}</h1>
+      <h1>${fullName}</h1>
       <ul>
         ${email ? `<li>Email: ${email}</li>` : ""}
         <li>Phone: ${phone}</li>
         <li>Birthday: ${birthday}</li>
-        <li>Signature: ${waiverSigned}</li>
+        <li>Signature: ${fullName}</li>
       </ul>
     `,
   };
