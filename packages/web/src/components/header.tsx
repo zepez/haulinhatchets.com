@@ -31,9 +31,14 @@ export const Header = () => {
           width={100}
           height={100}
         />
-        <h1 className="font-display text-4xl font-bold tracking-wide">
-          Haulin Hatchets
-        </h1>
+        <div className="flex flex-col">
+          <h2 className="font-display text-4xl font-bold tracking-wide">
+            Haulin Hatchets
+          </h2>
+          <h1 className="text-xs font-bold uppercase">
+            Axe throwing in and around Wilson, NC
+          </h1>
+        </div>
       </Link>
       <nav>
         <ul className="text-md font-cal flex flex-wrap gap-x-8 text-center font-semibold uppercase lg:gap-x-12 lg:text-lg">
