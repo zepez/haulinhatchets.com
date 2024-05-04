@@ -23,6 +23,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 export const Sign = () => {
   const [state, formAction] = useFormState(waiverAction, {
     message: "Submit 💨",
+    success: false,
   });
 
   const form = useForm<validate.Waiver>({
@@ -220,9 +221,15 @@ export const Sign = () => {
 
           <div className="flex justify-end">
             <Button type="submit" className="mt-4 w-full sm:mt-0 sm:w-auto">
-              {state.message}
+              {state.message}{" "}
             </Button>
           </div>
+
+          {state.success && (
+            <div className="text-background animate-pulse rounded-md bg-green-500 p-4 text-center text-xs font-bold uppercase">
+              Show this to your coach to proceed
+            </div>
+          )}
         </form>
       </Form>
     </Section>

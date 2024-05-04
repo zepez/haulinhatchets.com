@@ -12,6 +12,7 @@ import * as validate from "@packages/validate";
 
 export type FormState = {
   message: string;
+  success: boolean;
 };
 
 export async function waiverAction(prevState: FormState, formData: FormData) {
@@ -23,6 +24,7 @@ export async function waiverAction(prevState: FormState, formData: FormData) {
   if (!parsed.success) {
     return {
       message: "Invalid data ❌",
+      success: false,
     };
   }
 
@@ -38,6 +40,7 @@ export async function waiverAction(prevState: FormState, formData: FormData) {
   // if (error) {
   //   return {
   //     message: "❌  Failed to submit waiver",
+  //     success: false,
   //   };
   // }
 
@@ -48,10 +51,12 @@ export async function waiverAction(prevState: FormState, formData: FormData) {
   // if (!sent || !sent.accepted.length) {
   //   return {
   //     message: "❌  Failed to submit waiver",
+  //     success: false,
   //   };
   // }
 
   return {
     message: "Waiver submitted ✅",
+    success: true,
   };
 }
