@@ -98,6 +98,9 @@ importers:
       dotenv-cli:
         specifier: ^7.4.1
         version: 7.4.1
+      embla-carousel-react:
+        specifier: ^8.0.3
+        version: 8.0.3(react@18.3.1)
       next:
         specifier: 14.2.0
         version: 14.2.0(react-dom@18.3.1)(react@18.3.1)
@@ -1819,6 +1822,28 @@ packages:
 
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  /embla-carousel-react@8.0.3(react@18.3.1):
+    resolution: {integrity: sha512-kWRqu6S9FV7K1mKNBNmMiU8ZXLAOXHy352F6/3T8rF5/fV/pnKF/X5i5gRWvOoPT/tbvC3xQi3vAvJZ+SxsIDw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0
+    dependencies:
+      embla-carousel: 8.0.3
+      embla-carousel-reactive-utils: 8.0.3(embla-carousel@8.0.3)
+      react: 18.3.1
+    dev: false
+
+  /embla-carousel-reactive-utils@8.0.3(embla-carousel@8.0.3):
+    resolution: {integrity: sha512-9qvdSZJsFh6JokPNJYfsU6J8uDX9sDjBuUsmshuY3y3wS6JPwuE5d45i04DDNV9EB/7hwQew5qwRiemo3CwrIw==}
+    peerDependencies:
+      embla-carousel: 8.0.3
+    dependencies:
+      embla-carousel: 8.0.3
+    dev: false
+
+  /embla-carousel@8.0.3:
+    resolution: {integrity: sha512-ThQxBJeAQ8tS1LjBKS5ZoMfRCNXfuK93VrslWnNFmCKG45ir2AniCIMx+bYhaNA8lxwelfPXj1cEiZlHXk7IpQ==}
+    dev: false
 
   /emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
