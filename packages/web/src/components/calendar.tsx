@@ -8,7 +8,7 @@ export const Calendar = () => {
         <div className="pb-8">
           <Heading id="locations">We bring the fun to you</Heading>
           <p className="mb-4 text-lg">
-            Check out the calendar below to see where we'll be next!
+            Check out the calendar below to see where we&apos;ll be next!
           </p>
         </div>
         <p className="text-right text-[6rem] leading-none">🎯</p>

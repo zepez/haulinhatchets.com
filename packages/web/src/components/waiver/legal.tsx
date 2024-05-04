@@ -6,8 +6,8 @@ export const Legal = () => {
     <Section variant="small">
       <Heading id="read">Read</Heading>
       <p className="pb-8 text-xl">
-        Read the waiver and fill out the form below. Show your coach when you're
-        done.
+        Read the waiver and fill out the form below. Show your coach when
+        you&apos;re done.
       </p>
 
       <div className="flex flex-col gap-y-4 text-xs">
@@ -59,7 +59,7 @@ export const Legal = () => {
         </p>
 
         <p>
-          I acknowledge that this activity may involve a test of a person's
+          I acknowledge that this activity may involve a test of a person&apos;s
           physical and mental limits and carries with it the potential for
           death, severe injury, and property loss. The risks include, but are
           not limited to, those caused by terrain, facilities, temperature,

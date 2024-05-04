@@ -14,7 +14,6 @@
 	font-display: swap;
 }
 
-
 @layer base {
   :root {
     --background: 19 42% 9%;

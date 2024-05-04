@@ -36,10 +36,12 @@ export const Gallery = () => {
       >
         <CarouselContent>
           {images.map((image) => (
-            <CarouselItem className="basis-1/2 md:basis-1/4 lg:basis-1/6">
+            <CarouselItem
+              key={image}
+              className="basis-1/2 md:basis-1/4 lg:basis-1/6"
+            >
               <button onClick={() => setMain(image)}>
                 <Image
-                  key={image}
                   src={`/gallery/${image}.jpg`}
                   alt={`Haulin Hatchets Image ${image}`}
                   className="h-48 w-96 object-cover"
