@@ -8,6 +8,7 @@ import * as validate from "@packages/validate";
 import { waiverAction } from "@/actions/waiver";
 import { Heading } from "@/components/heading";
 import { Section } from "@/components/section";
+import { Callout } from "@/components/callout";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -226,9 +227,20 @@ export const Sign = () => {
           </div>
 
           {state.success && (
-            <div className="text-background animate-pulse rounded-md bg-green-500 p-4 text-center text-xs font-bold uppercase">
-              Show this to your coach to proceed
-            </div>
+            <>
+              <div className="text-background animate-pulse rounded-md bg-green-500 p-4 text-center text-xs font-bold uppercase">
+                Show this to your coach to proceed
+              </div>
+
+              <Callout
+                cta="While You Wait:"
+                href="/articles/axe-throwing-tutorial"
+                label="Getting Started"
+                title="Axe Throwing Tutorial"
+                description="Safety must be your top priority when engaging in axe throwing. Like any sport involving sharp implements, there are inherent risks, but with proper precautions, you can ensure a safe and enjoyable experience for everyone involved..."
+                className="px-0"
+              />
+            </>
           )}
         </form>
       </Form>

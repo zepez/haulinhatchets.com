@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { Callout } from "@/components/callout";
 import { cn } from "@/lib/utils";
 
 interface Props {
@@ -87,7 +88,7 @@ export default async function Page({ params: { slug } }: Props) {
   return (
     <article className="mx-auto mt-16 w-full max-w-4xl px-8 pt-8">
       <Wrapper>
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-balance text-7xl font-bold">
           {meta.heading} <br />{" "}
           <span className="text-2xl">{meta.subheading}</span>
         </h1>
@@ -115,6 +116,14 @@ export default async function Page({ params: { slug } }: Props) {
       <Wrapper className="prose-invert prose-neutral prose-h1:text-4xl prose-headings:font-bold prose-headings:mb-4 prose-img:w-auto prose-h3:text-3xl prose-p:mb-8 prose-img:max-h-[400px] prose-img:mx-auto prose-img:rounded-md">
         <Content />
       </Wrapper>
+
+      <Callout
+        cta="Ready to throw some axes?"
+        href="/waiver"
+        label="Next Steps"
+        title="Sign the Waiver"
+        description="To participate in axe throwing at Haulin' Hatchets, you must sign our waiver. It only takes a few minutes and can be completed online."
+      />
     </article>
   );
 }
