@@ -86,11 +86,14 @@ export default async function Page({ params: { slug } }: Props) {
   }
 
   return (
-    <article className="mx-auto mt-16 w-full max-w-4xl px-8 pt-8">
+    <article className="mx-auto mt-12 w-full max-w-4xl px-8 pt-8">
       <Wrapper>
         <h1 className="text-balance text-7xl font-bold">
-          {meta.heading} <br />{" "}
-          <span className="text-2xl">{meta.subheading}</span>
+          {meta.heading}
+          <br />{" "}
+          <span className="px-2 py-1 text-3xl leading-[1.5rem]">
+            {meta.subheading}
+          </span>
         </h1>
       </Wrapper>
 
