@@ -32,7 +32,8 @@ export const Callout = ({
         {img && (
           <Image
             src={img}
-            alt="Axe Throwing Example Gif"
+            alt={title || href}
+            unoptimized={href.includes(".gif")}
             width={300}
             height={300}
             className="mx-auto max-h-[250px] max-w-[250px] rounded-md sm:max-h-[200px] sm:max-w-[200px]"
