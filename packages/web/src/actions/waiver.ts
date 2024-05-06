@@ -2,13 +2,13 @@
 
 import config from "@packages/config";
 import * as validate from "@packages/validate";
-// import { createTransport, genWaiverMessage } from "@/lib/email";
+import { createTransport, genWaiverMessage } from "@/lib/email";
 import { addAirtableRecord } from "@/lib/airtable";
 
-// const mailer = createTransport({
-//   email: config.CONTACT_EMAIL,
-//   password: config.CONTACT_EMAIL_PASSWORD,
-// });
+const mailer = createTransport({
+  email: config.WAIVER_EMAIL,
+  password: config.WAIVER_EMAIL_PASSWORD,
+});
 
 export type FormState = {
   message: string;
@@ -37,21 +37,21 @@ export async function waiverAction(prevState: FormState, formData: FormData) {
 
   if (error) {
     return {
-      message: "❌  Failed to submit waiver",
+      message: "Failed to submit waiver ❌ ",
       success: false,
     };
   }
 
-  // const message = genWaiverMessage(data);
+  const message = genWaiverMessage(values);
 
-  // const sent = await mailer.sendMail(message);
+  const sent = await mailer.sendMail(message);
 
-  // if (!sent || !sent.accepted.length) {
-  //   return {
-  //     message: "❌  Failed to submit waiver",
-  //     success: false,
-  //   };
-  // }
+  if (!sent || !sent.accepted.length) {
+    return {
+      message: "Failed to submit waiver ❌",
+      success: false,
+    };
+  }
 
   return {
     message: "Waiver submitted ✅",
