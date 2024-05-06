@@ -31,7 +31,7 @@ export async function contactAction(prevState: FormState, formData: FormData) {
 
   if (!sent || !sent.accepted.length) {
     return {
-      error: "Failed to send email ❌ ",
+      message: "Failed to send email ❌ ",
     };
   }
 
