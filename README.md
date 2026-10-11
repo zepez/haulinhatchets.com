@@ -22,7 +22,7 @@
   <br />
   <br />
   <br />
-  <pre><a href="https://haulinhatchets.com">haulinhatchets.com</a></pre>
+  <pre><a href="https://haulinhatchets.zepez.dev">haulinhatchets.zepez.dev</a></pre>
   <br />
   <br />
   <br />
@@ -32,7 +32,9 @@
 
 ## What?
 
-Haulin' Hatchets L.L.C. is a mobile axe throwing trailer based out of Wilson, North Carolina.
+Haulin' Hatchets L.L.C. was a mobile axe throwing trailer based out of Wilson, North Carolina.
+
+The former domain, `haulinhatchets.com`, is defunct. The site is preserved for demonstration purposes at [haulinhatchets.zepez.dev](https://haulinhatchets.zepez.dev). Contact and waiver forms are disabled and do not send messages or collect signatures.
 
 ## Get Started
 

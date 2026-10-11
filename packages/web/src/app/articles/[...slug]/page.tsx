@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props) {
       siteName: "Haulin' Hatchets",
       images: [
         {
-          url: "https://haulinhatchets.com/og.png",
+          url: "https://haulinhatchets.zepez.dev/og.png",
           width: 800,
           height: 600,
           alt: "Haulin' Hatchets Open Graph Image",
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: Props) {
       creator: "@zepezAlex",
       images: [
         {
-          url: "https://haulinhatchets.com/twitter.png",
+          url: "https://haulinhatchets.zepez.dev/twitter.png",
           alt: "Haulin' Hatchets Twitter Image",
         },
       ],
