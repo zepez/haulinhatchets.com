@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://haulinhatchets.com"),
+  metadataBase: new URL("https://haulinhatchets.zepez.dev"),
   title: "Haulin' Hatchets | Mobile Axe Throwing, Wilson NC",
   description:
     "Haulin' Hatchets L.L.C. is a mobile axe throwing trailer based out of Wilson, North Carolina. We cater to festivals, company outings and private events!",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Alexander Zepezauer", url: "https://zepez.dev" }],
   creator: "Alexander Zepezauer",
   formatDetection: {
-    email: true,
+    email: false,
     address: true,
     telephone: true,
   },
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     title: "Haulin' Hatchets | Mobile Axe Throwing, Wilson NC",
     description:
       "Haulin' Hatchets L.L.C. is a mobile axe throwing trailer based out of Wilson, North Carolina. We cater to festivals, company outings and private events!",
-    url: "https://haulinhatchets.com",
+    url: "https://haulinhatchets.zepez.dev",
     siteName: "Haulin' Hatchets",
     images: [
       {
-        url: "https://haulinhatchets.com/og.png",
+        url: "https://haulinhatchets.zepez.dev/og.png",
         width: 800,
         height: 600,
         alt: "Haulin' Hatchets Open Graph Image",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     creator: "@zepezAlex",
     images: [
       {
-        url: "https://haulinhatchets.com/twitter.png",
+        url: "https://haulinhatchets.zepez.dev/twitter.png",
         alt: "Haulin' Hatchets Twitter Image",
       },
     ],
@@ -80,7 +80,11 @@ export default function Layout({
   return (
     <html lang="en">
       <body className={cn(inter.className, "font-sans")}>
-        <PlausibleProvider domain="haulinhatchets.com">
+        <PlausibleProvider domain="haulinhatchets.zepez.dev">
+          <aside className="bg-amber-500 px-4 py-2 text-center font-bold text-black">
+            <span className="font-mono">haulinhatchets.com</span> is defunct.
+            This site is for demonstration purposes only.
+          </aside>
           <Header />
           {children}
           <Footer />
